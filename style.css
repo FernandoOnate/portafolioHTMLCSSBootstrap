@@ -216,5 +216,8 @@ h1 {
     .overlay i {
         font-size: 24px;
     }
+    .overlay p {
+        font-size: 18px;
+    }
 
 }
