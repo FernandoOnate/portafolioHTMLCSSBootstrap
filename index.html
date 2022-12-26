@@ -27,7 +27,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
 
 </head>
 
@@ -49,10 +49,16 @@
                             <a class="nav-link active" aria-current="page" href="#">Sobre mí</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Proyectos</a>
+                            <a class="nav-link" href="#proyectos">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="#experiencia">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -75,26 +81,22 @@
             </div>
         </section>
         <!-- sobre mi -->
-        <section class="sobre-mi seccion-oscura">
+        <section id="sobre-mi" class="sobre-mi seccion-oscura">
             <div class="contenedor">
                 <h2 class="seccion-titulo">Conoce a Fernando Oñate.</h2>
-                <p class="seccion-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum libero alias
-                    magni, reprehenderit, officia aliquam, explicabo optio quis minus itaque praesentium quo veniam
-                    expedita enim quisquam rem quaerat aspernatur odio!</p>
+                <p class="seccion-texto">Hmm... parece que aún estoy pensando en qué podría colocar en esta sección.</p>
             </div>
         </section>
 
         <!-- Experiencia  -->
-        <section class="experiencia seccion-clara">
+        <section id="experiencia" class="experiencia seccion-clara">
             <div class="container text-center">
                 <div class="row">
                     <!-- Desarrollo web -->
                     <div class="columna col-12 col-md-6">
                         <i class="bi bi-laptop"></i>
                         <p class="experiencia-titulo">Desarrollo web</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rerum labore aliquam
-                            officia, quod, eum suscipit facilis amet quia natus quae quisquam itaque maxime ipsa
-                            voluptates possimus ut animi ipsam.</p>
+                        <p>Durante mi etapa como estudiante he tenido la oportunidad de crear proyectos web de caracter académico con diversas tecnologías de la industria, también me he logrado desempeñar correctamente dentro de mis responsabilidades como practicante en una empresa del departamento de Sucre donde originalmente estudié mi carrera profesional.</p>
                         <div class="badges-contenedor">
                             <span class="badge text-bg-primary">HTML</span>
                             <span class="badge text-bg-primary">CSS</span>
@@ -125,7 +127,7 @@
         </section>
 
         <!-- Proyectos -->
-        <section class="proyectos-recientes seccion-clara d-flex flex-column">
+        <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
             <h2 class="seccion-titulo titulo-negro">Mis proyectos</h2>
             <h4 class="seccion-descripcion">Estos son algunos proyectos que he creado...</h4>
             <!-- Galeria de proyectos -->
@@ -217,12 +219,111 @@
             </a>
         </section>
         <!-- GALERIA PROYECTOS -->
-        <section class="galeria seccion-clara">
+        <section id="galeria" class="galeria seccion-clara">
             <h2 class="seccion-titulo">Galería</h2>
             <h4 class="seccion-descripcion">Se ven imágenes correspondientes a la galería de los proyectos de la sección anterior</h4>
+            <!-- Carruser   -->
+            <div id="carruserGaleria" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carruserGaleria" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carruserGaleria" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carruserGaleria" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carruserGaleria" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carruserGaleria" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carruserGaleria" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carruserGaleria" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                  <button type="button" data-bs-target="#carruserGaleria" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                  <button type="button" data-bs-target="#carruserGaleria" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                  <button type="button" data-bs-target="#carruserGaleria" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                  <button type="button" data-bs-target="#carruserGaleria" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                  <button type="button" data-bs-target="#carruserGaleria" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                  <button type="button" data-bs-target="#carruserGaleria" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/libros1.png" class="d-block w-100" alt="Imagen proyecto tabla de libros 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/libros2.png" class="d-block w-100" alt="Imagen proyecto tabla de libros 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/esquina2.png" class="d-block w-100" alt="Imagen proyecto esquina verde 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/esquina1.png" class="d-block w-100" alt="Imagen proyecto esquina verde 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/loginEsquina.png" class="d-block w-100" alt="Imagen proyecto esquina verde 3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/reactScreen1.png" class="d-block w-100" alt="Imagen proyecto react app wizzard 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/reactScreen2.png" class="d-block w-100" alt="Imagen proyecto react app wizzard 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/reactScreen3.png" class="d-block w-100" alt="Imagen proyecto react app wizzard 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/energia.png" class="d-block w-100" alt="Imagen proyecto angular 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/angular2.png" class="d-block w-100" alt="Imagen proyecto angular 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/csince.png" class="d-block w-100" alt="Imagen proyecto canal 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/canal1.png" class="d-block w-100" alt="Imagen proyecto canal 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/canal3.png" class="d-block w-100" alt="Imagen proyecto canal 3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruserGaleria" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruserGaleria" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+        </section>
 
+        <!-- CONTACTO -->
+        <section id="contacto" class="contacto seccion-oscura">
+            <div class="container">
+                <div class="container d-flex text-center justify-content-evenly rectangulo">
+                    <div class="row">
+                        <div class="col-12 col-md-4 seccion-titulo">¡Tengamos una charla!</div>
+                        <div class="col-12 col-md-4 description">Puedes contactarme para crear proyectos web y, hacer de tus ideas, una realidad.</div>
+                        <div class="col-12 col-md-4">
+                            <a href="mailto:fernandoissan_onaterodriguez@uajs.edu.co">
+                                <button class="button">Contactar. <i class="bi bi-envelope-plus-fill"></i></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
+    <!-- PIE DE PAGINA (FOOTER) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <!-- <img class="footer-icon" src="" alt=""> -->
+        <p class="footer-texto text-center">Todos los días se aprende algo nuevo por aquí, desde LATAM, hecho desde 0 con &#x2764;</p>
+        <div class="iconos-redes d-flex flex-wrap align-items-center justify-content-center ">
+            <a href="https://twitter.com/Fernando_R_O" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+            <a href="https://github.com/FernandoOnate" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+            <a href="https://www.instagram.com/fefefe_fer" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/fernando-o%C3%B1ate-rodriguez/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:fernandoissan_onaterodriguez@uajs.edu.co"><i class="bi bi-envelope-at-fill"></i></a>
+        </div>
+        <div class="derechos-autor d-flex text-center">
+            Who made this? <br> Fernando Oñate (2022) &#169;
+        </div>
+    </footer>
     <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
